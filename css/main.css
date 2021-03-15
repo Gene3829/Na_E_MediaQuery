@@ -6,12 +6,6 @@ body {
 	font-family: 'DotGothic16', Helvetica, Arial, sans-serif;
 }
 
-.container {
-	margin: 0 auto;
-	display: flex;
-	max-width: 1140px;
-}
-
 .box {
 	color: #fff;
 	border-radius: 5px;
@@ -20,33 +14,33 @@ body {
 	font-weight: bold;
 	font-size: 30px;
 	letter-spacing: 2px;
-	margin: 10px;
-	flex-grow: 1; /* unitless value represents proportion */
+	margin: 10px; /* unitless value represents proportion */
 	height: 300px;
 }
 
 .box1 {
-	background-color: blue;	
+	background-color: pink;	
 }
 
 .box2 {
-	background-color: purple;	
+	background-color: red;	
 }
 
 .box3 {
-	display: block;
-	background-color: grey;	
+	display: none;	
 }
 
 .box4 {
-	display: block;
-	background-color: brown;	
+	display: none;
 }
 
-@media screen and (max-width: 641px) {
+@media screen and (min-width: 641px) {
 
 	.container {
-		flex-direction: column;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: row;
+		max-width: 1140px;
 	}
 
 	.box {
@@ -56,19 +50,21 @@ body {
 	}
 
 	.box1 {
-		background-color: pink;	
+		background-color: blue;	
 	}
 
 	.box2 {
-		background-color: red;	
+		background-color: purple;	
 	}
 
 	.box3 {
-		display: none;	
+		display: block;
+		background-color: grey;	
 	}
 
 	.box4 {
-		display: none;
+		display: block;
+		background-color: brown;	
 	}
 
 }
